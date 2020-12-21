@@ -1,5 +1,9 @@
-<!--Bootstrap jsQuery Popper-->
+<!--Bootstrap Datatables, jsQuery Popper-->
 <script src="../plugins/jquery/jsquery-3.5.1.min.js"></script>
+<script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
 <!--Vue Js-->
