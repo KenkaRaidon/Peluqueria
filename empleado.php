@@ -8,8 +8,7 @@
             <h2>Empleados</h2>
         </div>
         <div class="col-2">
-            <!-- Button trigger modal -->
-            <button id="btnNuevo" type="button" class="btn btn-success" class="btn btn-primary" data-toggle="modal">
+            <button id="btnNuevoEmpleado" type="button" class="btn btn-success" class="btn btn-primary" data-toggle="modal">
                 <i class="far fa-plus-square"></i>&nbsp;AGREGAR</button>
         </div>
     </div>
@@ -22,6 +21,8 @@
                 <th>Ap. Materno</th>
                 <th>email</th>
                 <th>Telefono</th>
+                <th>Fecha Empleo</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -29,5 +30,7 @@
         </tbody>
     </table>
 </div>
+
+<?php include "modal/modal_empleado.php"; ?>
 
 <?php include "includes/footer.php"; ?>
