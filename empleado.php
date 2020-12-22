@@ -1,6 +1,5 @@
-<?php include "includes/header.php";?>
+<?php include "includes/header.php"; ?>
 
-<h1>Hola</h1>
 <div class="container">
     <br>
     <br>
@@ -14,7 +13,7 @@
                 <i class="far fa-plus-square"></i>&nbsp;AGREGAR</button>
         </div>
     </div>
-    <table id="tabla" class="table table-dark table-striped table-bordered table-hover" style="width:100%">
+    <table id="tabla" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>
                 <th>ID</th>
@@ -31,23 +30,4 @@
     </table>
 </div>
 
-<div id="app">
-    {{ message }}
-</div>
-
-<div id="app-2">
-    <span v-bind:title="message">
-        Hover your mouse over me for a few seconds
-        to see my dynamically bound title!
-    </span>
-</div>
-
-<div>
-    <button id="button" aria-describedby="tooltip">My button</button>
-    <div id="tooltip" role="tooltip">
-        My tooltip
-        <div id="arrow" data-popper-arrow></div>
-    </div>
-</div>
-
-<?php include "includes/footer.php";?>
+<?php include "includes/footer.php"; ?>

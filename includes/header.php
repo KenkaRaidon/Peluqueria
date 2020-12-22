@@ -8,9 +8,10 @@
     <!--Bootstrap 4-->
     <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
     <!--Datatable-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
     <!--Font Awesome-->
-    <link rel="stylesheet" href="../plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!--Sweet Alert 2-->
     <link rel="stylesheet" href="../plugins/sweetalert2/css/sweetalert2.min.css">
     <!--Mi CSS-->
