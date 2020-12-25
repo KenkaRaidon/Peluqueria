@@ -53,7 +53,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary" id="btnGuardarEmpleado">GUARDAR</button>
+                            <button type="submit" class="btn btn-primary" id="btnGuardarEmpleado"></button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
                         </div>
                     </div>

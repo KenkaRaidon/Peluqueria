@@ -12,9 +12,10 @@
                 <i class="far fa-plus-square"></i>&nbsp;AGREGAR</button>
         </div>
     </div>
-    <table id="tabla" class="table table-striped table-bordered" style="width:100%">
+    <table id="tablaEmpleado" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>
+            <!-- hola-->
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Ap. Paterno</th>
@@ -25,9 +26,6 @@
                 <th>Acciones</th>
             </tr>
         </thead>
-        <tbody>
-            <?php include "bd/tabla_empleado.php";?>
-        </tbody>
     </table>
 </div>
 
