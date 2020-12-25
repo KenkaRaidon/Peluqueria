@@ -26,7 +26,6 @@ if (isset($_POST)) {
             $sql = "DELETE FROM empleado
             WHERE id_empleado=$idEmpleado";
             break;
-
     }
 
     if (mysqli_query($conexion, $sql)) {

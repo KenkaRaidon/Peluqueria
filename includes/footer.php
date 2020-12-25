@@ -14,8 +14,9 @@
 <!--Sweet Alert 2-->
 <script src="../plugins/sweetalert2/js/sweetalert2.all.min.js"></script>
 <!--Mi js-->
-<script src="../main.js"></script>
-<script src="../vueJS.js"></script>
+<script src="../js/empleado.js"></script>
+<script src="../js/mascota.js"></script>
+<script src="../js/vueJS.js"></script>
 </body>
 
 </html>
