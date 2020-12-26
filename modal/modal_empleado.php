@@ -28,28 +28,28 @@
                             <div class="col-4">Apellido Materno:</div>
                             <div class="col-4">
                                 <input type="text" name="ApellidoMaternoEmpleado" id="ApellidoMaternoEmpleado"
-                                    class="form-control form-control-lg"/>
+                                    class="form-control form-control-lg" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4">email:</div>
                             <div class="col-4">
-                            <input type="text" name="emailEmpleado" id="emailEmpleado"
-                                    class="form-control form-control-lg"/>
+                                <input type="text" name="emailEmpleado" id="emailEmpleado"
+                                    class="form-control form-control-lg" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4">Telefono:</div>
                             <div class="col-4">
-                            <input type="text" name="telefonoEmpleado" id="telefonoEmpleado"
-                                    class="form-control form-control-lg"/>
+                                <input type="text" name="telefonoEmpleado" id="telefonoEmpleado"
+                                    class="form-control form-control-lg" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4">Fecha de Empleo:</div>
                             <div class="col-4">
-                            <input type="date" name="fechaEmpleo" id="fechaEmpleo"
-                                    class="form-control form-control-lg"/>
+                                <input type="date" name="fechaEmpleo" id="fechaEmpleo"
+                                    class="form-control form-control-lg" />
                             </div>
                         </div>
                         <div class="modal-footer">
