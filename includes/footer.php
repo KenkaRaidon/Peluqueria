@@ -19,6 +19,7 @@
 <script src="../js/empleado.js"></script>
 <script src="../js/mascota.js"></script>
 <script src="../js/cliente.js"></script>
+<script src="../js/cita.js"></script>
 <script src="../js/vueJS.js"></script>
 </body>
 
