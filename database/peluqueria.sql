@@ -29,14 +29,17 @@ CREATE TABLE `cita` (
   `servicio` varchar(50) NOT NULL,
   `fecha_cita` date NOT NULL,
   `hora_cita` time NOT NULL,
+  `status` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_cita`),
   KEY `id_cliente` (`id_cliente`),
   KEY `id_mascota` (`id_mascota`),
   KEY `servicio` (`servicio`),
+  KEY `status` (`status`),
   CONSTRAINT `cita_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente_mascotas` (`id_cliente`),
   CONSTRAINT `cita_ibfk_2` FOREIGN KEY (`id_mascota`) REFERENCES `cliente_mascotas` (`id_mascota`),
-  CONSTRAINT `cita_ibfk_3` FOREIGN KEY (`servicio`) REFERENCES `servicio_cita` (`servicio`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  CONSTRAINT `servicio` FOREIGN KEY (`servicio`) REFERENCES `servicio_cita` (`servicio`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `status` FOREIGN KEY (`status`) REFERENCES `status_cita` (`status`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -45,6 +48,7 @@ CREATE TABLE `cita` (
 
 LOCK TABLES `cita` WRITE;
 /*!40000 ALTER TABLE `cita` DISABLE KEYS */;
+INSERT INTO `cita` VALUES (1,2,5,'BAÑO','2020-12-27','22:31:00','EN PROCESO'),(2,7,11,'DRENADO DE GLANDULAS ANALES','2020-12-28','22:32:00','EN PROCESO');
 /*!40000 ALTER TABLE `cita` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -66,7 +70,7 @@ CREATE TABLE `cliente` (
   `calle` varchar(45) DEFAULT NULL,
   `numero` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -75,7 +79,7 @@ CREATE TABLE `cliente` (
 
 LOCK TABLES `cliente` WRITE;
 /*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
-INSERT INTO `cliente` VALUES (2,'Juan','Lopez','Maria','m@gmail.com','6161908988','ALTA MAR','',0),(4,'Juan','Posada','','','','ALTA MAR','',0),(6,'Izamar','Posada','','','','0','',0),(7,'German','Lopez','','','','0','',0),(9,'Lia','As','','','','0','',0),(14,'Izamar','Lopez','','','','0','',0),(24,'Maria','Rocio','','Rosy@hotmail.com','66615423','MODERNA','Catriles',12),(25,'Monica','Sanz','','','123098834','AZTECA','Kosco',13),(26,'Cleo','Soros','','soronita@lovecraft.com','6156278831','AZTECA','Jota',44);
+INSERT INTO `cliente` VALUES (2,'Juan','Lopez','Maria','m@gmail.com','6161908988','ALTA MAR','',0),(4,'Juan','Posada','','','','ALTA MAR','',0),(6,'Izamar','Posada','','','','0','',0),(7,'German','Lopez','','','','0','',0),(9,'Lia','As','','','','0','',0),(14,'Izamar','Lopez','','','','0','',0),(24,'Maria','Rocio','','Rosy@hotmail.com','66615423','MODERNA','Catriles',12),(25,'Monica','Sanz','','','123098834','AZTECA','Kosco',13),(26,'Cleo','Soros','','soronita@lovecraft.com','6156278831','AZTECA','Jota',44),(27,'','','','','','','',0),(28,'','','','','','','',0);
 /*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -315,6 +319,29 @@ INSERT INTO `sexo_mascota` VALUES ('FEMENINO'),('MASCULINO');
 UNLOCK TABLES;
 
 --
+-- Table structure for table `status_cita`
+--
+
+DROP TABLE IF EXISTS `status_cita`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `status_cita` (
+  `status` varchar(50) NOT NULL,
+  PRIMARY KEY (`status`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `status_cita`
+--
+
+LOCK TABLES `status_cita` WRITE;
+/*!40000 ALTER TABLE `status_cita` DISABLE KEYS */;
+INSERT INTO `status_cita` VALUES ('CANCELADO'),('EN PROCESO'),('FINALIZADO');
+/*!40000 ALTER TABLE `status_cita` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `tipo_usuario`
 --
 
@@ -376,4 +403,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-27 19:19:00
+-- Dump completed on 2020-12-27 22:42:07
