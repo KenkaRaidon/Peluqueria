@@ -14,6 +14,8 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!--Sweet Alert 2-->
     <link rel="stylesheet" href="../plugins/sweetalert2/css/sweetalert2.min.css">
+    <!--Select2-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <!--Mi CSS-->
     <link rel="stylesheet" href="../css/main.css">
 </head>

@@ -6,12 +6,12 @@ if (isset($_POST)) {
     $edadMascota = $_POST['edadMascota'];
     $tipoPelo = $_POST['tipoPelo'];
     $razaMascota = $_POST['razaMascota'];
-    $sexoMascota = $_POST['sexoMascota'];
+    $sexoMascota = $_POST['sexoMascota']; 
     $opcion = $_POST['opcion'];
 
     switch ($opcion) {
         case 1:
-            $sql = "insert into mascota values(0, '$nombreMascota', $edadMascota, '$tipoPelo', '$razaMascota', '$sexoMascota');";
+            $sql = "INSERT into mascota values(NULL, '$nombreMascota', $edadMascota, '$tipoPelo', '$razaMascota', '$sexoMascota');";
             break;
 
         case 2:
@@ -28,7 +28,8 @@ if (isset($_POST)) {
     }
 
     if (mysqli_query($conexion, $sql)) {
-        echo "Guardado exitosamente";
+        $idMascota=mysqli_insert_id($conexion);
+        echo $ultimo_id;
     } else {
         echo "ocurrio un error";
     }

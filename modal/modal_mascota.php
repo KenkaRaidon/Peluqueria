@@ -13,15 +13,13 @@
                         <div class="row">
                             <div class="col-4">Nombre:</div>
                             <div class="col-4">
-                                <input type="text" name="nombreMascota" id="nombreMascota"
-                                    class="form-control form-control-lg" required />
+                                <input type="text" name="nombreMascota" id="nombreMascota" class="form-control form-control-lg" required />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4">Edad:</div>
                             <div class="col-4">
-                                <input type="number" name="edadMascota" id="edadMascota"
-                                    class="form-control form-control-lg" required />
+                                <input type="number" name="edadMascota" id="edadMascota" class="form-control form-control-lg" required />
                             </div>
                         </div>
                         <div class="row">
