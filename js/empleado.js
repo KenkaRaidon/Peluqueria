@@ -1,5 +1,6 @@
 $(document).ready(function () {
   var opcion;
+  var idEmpleado=0;
 
   var table = $('#tablaEmpleado').DataTable({
     "destroy": true,
@@ -157,36 +158,37 @@ $(document).ready(function () {
     $(".modal-title").text("Informacion Empleado");
     $('#modalEmpleado').modal('show');
   });
+
+  function habilitar_inputs(valor) {
+    switch (valor) {
+      case 1:
+        $('#nombreEmpleado').prop('readonly', true);
+        $('#ApellidoPaternoEmpleado').prop('readonly', true);
+        $('#ApellidoMaternoEmpleado').prop('readonly', true);
+        $('#emailEmpleado').prop('readonly', true);
+        $('#telefonoEmpleado').prop('readonly', true);
+        $('#fechaEmpleo').prop('readonly', true);
+        $("#btnGuardarEmpleado").prop("disabled", false);
+        break;
+      case 2:
+        $('#nombreEmpleado').prop('readonly', false);
+        $('#ApellidoPaternoEmpleado').prop('readonly', false);
+        $('#ApellidoMaternoEmpleado').prop('readonly', false);
+        $('#emailEmpleado').prop('readonly', false);
+        $('#telefonoEmpleado').prop('readonly', false);
+        $('#fechaEmpleo').prop('readonly', false);
+        $("#btnGuardarEmpleado").prop("disabled", false);
+        break;
+      case 3:
+        $('#nombreEmpleado').prop('readonly', true);
+        $('#ApellidoPaternoEmpleado').prop('readonly', true);
+        $('#ApellidoMaternoEmpleado').prop('readonly', true);
+        $('#emailEmpleado').prop('readonly', true);
+        $('#telefonoEmpleado').prop('readonly', true);
+        $('#fechaEmpleo').prop('readonly', true);
+        $("#btnGuardarEmpleado").prop("disabled", true);
+        break;
+    }
+  }
 });
 
-function habilitar_inputs(valor) {
-  switch (valor) {
-    case 1:
-      $('#nombreEmpleado').prop('readonly', true);
-      $('#ApellidoPaternoEmpleado').prop('readonly', true);
-      $('#ApellidoMaternoEmpleado').prop('readonly', true);
-      $('#emailEmpleado').prop('readonly', true);
-      $('#telefonoEmpleado').prop('readonly', true);
-      $('#fechaEmpleo').prop('readonly', true);
-      $("#btnGuardarEmpleado").prop("disabled", false);
-      break;
-    case 2:
-      $('#nombreEmpleado').prop('readonly', false);
-      $('#ApellidoPaternoEmpleado').prop('readonly', false);
-      $('#ApellidoMaternoEmpleado').prop('readonly', false);
-      $('#emailEmpleado').prop('readonly', false);
-      $('#telefonoEmpleado').prop('readonly', false);
-      $('#fechaEmpleo').prop('readonly', false);
-      $("#btnGuardarEmpleado").prop("disabled", false);
-      break;
-    case 3:
-      $('#nombreEmpleado').prop('readonly', true);
-      $('#ApellidoPaternoEmpleado').prop('readonly', true);
-      $('#ApellidoMaternoEmpleado').prop('readonly', true);
-      $('#emailEmpleado').prop('readonly', true);
-      $('#telefonoEmpleado').prop('readonly', true);
-      $('#fechaEmpleo').prop('readonly', true);
-      $("#btnGuardarEmpleado").prop("disabled", true);
-      break;
-  }
-}

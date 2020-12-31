@@ -1,7 +1,8 @@
 <?php
 include_once 'conexion.php';
 
-$sql = "SELECT * FROM cita WHERE cita.status='EN PROCESO'";
+//$sql = "SELECT * FROM mascota";
+$sql = "SELECT * FROM usuario";
 $resultado = mysqli_query($conexion, $sql);
 while ($data = mysqli_fetch_assoc($resultado)) {
     $arreglo["data"][] = $data;

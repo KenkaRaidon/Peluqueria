@@ -1,4 +1,4 @@
-<?php include "includes/header.php";?>
+<?php include "includes/header.php"; ?>
 
 <h1>Hola</h1>
 <div class="container">
@@ -26,7 +26,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php include "bd/tabla_empleado.php";?>
+            <?php include "bd/tabla_empleado.php"; ?>
         </tbody>
     </table>
 </div>
@@ -50,4 +50,4 @@
     </div>
 </div>
 
-<?php include "includes/footer.php";?>
+<?php include "includes/footer.php"; ?>
