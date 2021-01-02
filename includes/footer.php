@@ -22,6 +22,7 @@
 <script src="../js/cita.js"></script>
 <script src="../js/usuario.js"></script>
 <script src="../js/historial.js"></script>
+<script src="../js/bear.js"></script>
 <script src="../js/vueJS.js"></script>
 </body>
 

@@ -1,12 +1,13 @@
 <?php include "includes/header.php"; ?>
 
 <div class="container">
+    <a id="btnReturn" href="index.php" class="fas fa-undo-alt">Regresar</a>
     <br>
     <br>
     <div class="row">
         <div class="col-10">
             <h2>Historial</h2>
-        </div>  
+        </div>
     </div>
     <table id="tablaHistorial" class="table table-striped table-bordered" style="width:100%">
         <thead>

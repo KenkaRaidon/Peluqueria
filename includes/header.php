@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $user=$_SESSION['username'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,3 +25,9 @@
 </head>
 
 <body>
+    
+<?php
+if ($_SESSION['username'] == "") {
+    echo "<script>window.location.href = 'login.php';</script>";
+} // if ($_SESSION["id_session"] == "")
+?>

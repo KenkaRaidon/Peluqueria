@@ -1,6 +1,7 @@
 <?php include "includes/header.php"; ?>
 
 <div class="container">
+    <a id="btnReturn" href="index.php" class="fas fa-undo-alt">Regresar</a>
     <br>
     <br>
     <div class="row">
@@ -8,7 +9,8 @@
             <h2>Cliente</h2>
         </div>
         <div class="col-2">
-            <button id="btnNuevoCliente" type="button" class="btn btn-success" class="btn btn-primary" data-toggle="modal">
+            <button id="btnNuevoCliente" type="button" class="btn btn-success" class="btn btn-primary"
+                data-toggle="modal">
                 <i class="far fa-plus-square"></i>&nbsp;AGREGAR</button>
         </div>
     </div>
