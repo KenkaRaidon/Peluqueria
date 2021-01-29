@@ -6,7 +6,7 @@ $(document).ready(function () {
 
             var username = $('#username').val();
             var password = $('#password').val();
-
+       
             $.ajax({
                 type: 'POST',
                 url: 'bd/login.php',
