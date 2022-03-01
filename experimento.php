@@ -29,25 +29,31 @@
             <?php include "bd/listarEmpleado.php"; ?>
         </tbody>
     </table>
-</div>
 
-<div id="app">
-    {{ message }}
-</div>
+    <div id="app">
+        {{ message }}
+    </div>
 
-<div id="app-2">
-    <span v-bind:title="message">
-        Hover your mouse over me for a few seconds
-        to see my dynamically bound title!
-    </span>
-</div>
+    <div id="app-2">
+        <span v-bind:title="message">
+            Hover your mouse over me for a few seconds
+            to see my dynamically bound title!
+        </span>
+    </div>
 
-<div>
-    <button id="button" aria-describedby="tooltip">My button</button>
-    <div id="tooltip" role="tooltip">
-        My tooltip
-        <div id="arrow" data-popper-arrow></div>
+    <div id="app-3">
+        <span v-if="seen">Now you see me</span>
+    </div>
+    
+    <div>
+        <button id="button" aria-describedby="tooltip">My button</button>
+        <div id="tooltip" role="tooltip">
+            My tooltip
+            <div id="arrow" data-popper-arrow></div>
+        </div>
     </div>
 </div>
+
+
 
 <?php include "includes/footer.php"; ?>
