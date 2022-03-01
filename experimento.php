@@ -26,7 +26,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php include "bd/tabla_empleado.php"; ?>
+            <?php include "bd/listarEmpleado.php"; ?>
         </tbody>
     </table>
 </div>
